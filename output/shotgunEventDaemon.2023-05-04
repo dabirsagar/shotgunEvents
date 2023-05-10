@@ -1,0 +1,34 @@
+2023-05-04 11:18:01,588 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-04 11:18:01,589 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-04 11:18:05,184 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-04 11:18:08,930 - engine - INFO - Last event id (493368) from the SG database.
+2023-05-04 18:14:43,614 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-04 18:14:49,519 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-04 18:14:49,520 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-04 18:14:51,499 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-04 18:17:10,198 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-04 18:17:33,571 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-04 18:17:33,572 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-04 18:17:35,546 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-04 18:22:24,027 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-04 18:23:51,145 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-04 18:23:51,146 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-04 18:23:53,083 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-04 18:25:23,875 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-04 18:25:31,552 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-04 18:25:31,552 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-04 18:25:33,478 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-04 18:26:27,699 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-04 18:26:49,224 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-04 18:26:49,225 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-04 18:26:51,181 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-04 18:27:42,401 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-04 18:34:21,561 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-04 18:37:46,007 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-04 18:37:46,007 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-04 18:37:47,978 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-04 18:39:13,184 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-04 18:39:15,892 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-04 18:39:15,893 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-04 18:39:17,828 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-04 18:43:14,687 - engine - WARNING - Keyboard interrupt. Cleaning up...

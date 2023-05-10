@@ -1,0 +1,25 @@
+2023-05-04 18:16:08,798 - plugin.createNewProjectStructure.createProject - INFO - Project code is not set. Skipping folder creation for  
+ Dummy
+2023-05-04 18:16:25,135 - plugin.createNewProjectStructure.createProject - INFO - check val is false
+2023-05-04 18:16:47,651 - plugin.createNewProjectStructure.createProject - INFO - Project folder created at: 
+ /home/admin/DirStructure_root/prod/projects/DMY
+2023-05-04 18:16:58,666 - plugin.createNewProjectStructure.createProject - INFO - check val is false
+2023-05-04 18:16:59,801 - plugin.createNewProjectStructure.createProject - INFO - /home/admin/DirStructure_root/prod/projects/DMY path already exists. Skipping folder creation.
+2023-05-04 18:19:46,167 - plugin.createNewProjectStructure.createProject - INFO - check val is false
+2023-05-04 18:20:24,892 - plugin.createNewProjectStructure.createProject - WARNING - /home/admin/DirStructure_root/prod/projects/DMY path already exists. Skipping folder creation.
+2023-05-04 18:24:06,297 - plugin.createNewProjectStructure.createProject - INFO - check val is false
+2023-05-04 18:24:12,763 - plugin.createNewProjectStructure.createProject - WARNING - /home/admin/DirStructure_root/prod/projects/DMY path already exists. Skipping folder creation.
+2023-05-04 18:25:36,019 - plugin.createNewProjectStructure.createProject - INFO - check val is false
+2023-05-04 18:25:53,080 - plugin.createNewProjectStructure.createProject - WARNING - /home/admin/DirStructure_root/prod/projects/DMY path already exists. Skipping folder creation.
+2023-05-04 18:26:53,729 - plugin.createNewProjectStructure.createProject - INFO - check val is false
+2023-05-04 18:27:05,523 - plugin.createNewProjectStructure.createProject - WARNING - /home/admin/DirStructure_root/prod/projects/DMY path already exists. Skipping folder creation.
+2023-05-04 18:27:55,598 - plugin.createNewProjectStructure.createProject - INFO - check val is false
+2023-05-04 18:28:07,372 - plugin.createNewProjectStructure.createProject - ERROR - /home/admin/DirStructure_root/prod/projects/DMY path already exists. Skipping folder creation.
+2023-05-04 18:28:58,652 - plugin.createNewProjectStructure.createProject - INFO - check val is false
+2023-05-04 18:28:59,781 - plugin.createNewProjectStructure.createProject - ERROR - /home/admin/DirStructure_root/prod/projects/DMY path already exists. Skipping folder creation.
+2023-05-04 18:29:46,957 - plugin.createNewProjectStructure.createProject - WARNING - project DMTV not active...Skipping folder creation.
+2023-05-04 18:38:17,152 - plugin.createNewProjectStructure.createProject - INFO - check val is false
+2023-05-04 18:38:17,445 - plugin.createNewProjectStructure.createProject - INFO - check val is false
+2023-05-04 18:38:29,213 - plugin.createNewProjectStructure.createProject - ERROR - /home/admin/DirStructure_root/prod/projects/DMY path already exists. Skipping folder creation.
+2023-05-04 18:39:25,684 - plugin.createNewProjectStructure.createProject - INFO - check val is false
+2023-05-04 18:39:32,122 - plugin.createNewProjectStructure.createProject - ERROR - /home/admin/DirStructure_root/prod/projects/DMY path already exists. Skipping folder creation.

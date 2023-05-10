@@ -1,0 +1,116 @@
+2023-05-10 15:21:12,482 - plugin.createNewTask.createTask - CRITICAL - An error occured processing an event.
+
+Traceback (most recent call last):
+  File "/home/admin/pipeline/shotgunEvents/src/shotgunEventDaemon.py", line 1104, in process
+    self._callback(self._shotgun, self._logger, event, self._args)
+  File "/home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py", line 111, in createTask
+    taskPath = os.path.join(rootPath,taskDict['project']['s'], )
+KeyError: 's'
+
+
+Local variables at outer most frame in plugin:
+
+{'args': None,
+ 'checkVal': True,
+ 'event': {'attribute_name': 'sg_pipeline_ready',
+           'created_at': datetime.datetime(2023, 5, 10, 15, 20, 45, tzinfo=<shotgun_api3.lib.sgtimezone.LocalTimezone object at 0x7f0be591d630>),
+           'entity': {'id': 6226, 'name': 'Lighting', 'type': 'Task'},
+           'event_type': 'Shotgun_Task_Change',
+           'id': 493569,
+           'meta': {'attribute_name': 'sg_pipeline_ready',
+                    'entity_id': 6226,
+                    'entity_type': 'Task',
+                    'field_data_type': 'checkbox',
+                    'new_value': True,
+                    'old_value': False,
+                    'type': 'attribute_change'},
+           'project': {'id': 288, 'name': 'DummyTV', 'type': 'Project'},
+           'session_uuid': '0b9e1a96-ef17-11ed-8797-0242ac110004',
+           'type': 'EventLogEntry',
+           'user': {'id': 88, 'name': 'sagar dabir', 'type': 'HumanUser'}},
+ 'event_project': {'id': 288, 'name': 'DummyTV', 'type': 'Project'},
+ 'logger': <Logger plugin.createNewTask.createTask (INFO)>,
+ 'rootPath': '/home/admin/DirStructure_root/prod/projects',
+ 'script_key': 'osayi0frbwuqiSizj#tiatdyz',
+ 'script_name': 'readAccess',
+ 'server': 'https://sagar.shotgrid.autodesk.com',
+ 'sg': <shotgun_api3.shotgun.Shotgun object at 0x7f0be54a6cf8>,
+ 'taskDict': {'content': 'Lighting',
+              'entity': {'id': 1339, 'name': '0010', 'type': 'Shot'},
+              'id': 6226,
+              'project': {'id': 288, 'name': 'DummyTV', 'type': 'Project'},
+              'step': {'id': 7, 'name': 'Light', 'type': 'Step'},
+              'task_assignees': [],
+              'type': 'Task'},
+ 'task_id': 6226,
+ 'templatePath': '/home/admin/pipeline/Templates'}
+2023-05-10 17:01:21,375 - plugin.createNewTask.createTask - CRITICAL - An error occured processing an event.
+
+Traceback (most recent call last):
+  File "/home/admin/pipeline/shotgunEvents/src/shotgunEventDaemon.py", line 1104, in process
+    self._callback(self._shotgun, self._logger, event, self._args)
+  File "/home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py", line 118, in createTask
+    taskDict['entity.Shot.code'], taskDict['step'], taskDict['content'])
+  File "/usr/lib64/python3.6/posixpath.py", line 94, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/usr/lib64/python3.6/genericpath.py", line 149, in _check_arg_types
+    (funcname, s.__class__.__name__)) from None
+TypeError: join() argument must be str or bytes, not 'dict'
+
+
+Local variables at outer most frame in plugin:
+
+{'args': None,
+ 'checkVal': True,
+ 'event': {'attribute_name': 'sg_pipeline_ready',
+           'created_at': datetime.datetime(2023, 5, 10, 17, 1, 32, tzinfo=<shotgun_api3.lib.sgtimezone.LocalTimezone object at 0x7f9571bc0630>),
+           'entity': {'id': 6257, 'name': 'Animation', 'type': 'Task'},
+           'event_type': 'Shotgun_Task_Change',
+           'id': 494022,
+           'meta': {'attribute_name': 'sg_pipeline_ready',
+                    'entity_id': 6257,
+                    'entity_type': 'Task',
+                    'field_data_type': 'checkbox',
+                    'new_value': True,
+                    'old_value': False,
+                    'type': 'attribute_change'},
+           'project': {'id': 320, 'name': 'TestEpisodic', 'type': 'Project'},
+           'session_uuid': 'a5d65d18-ef25-11ed-b92c-0242ac110005',
+           'type': 'EventLogEntry',
+           'user': {'id': 88, 'name': 'sagar dabir', 'type': 'HumanUser'}},
+ 'event_project': {'id': 320, 'name': 'TestEpisodic', 'type': 'Project'},
+ 'logger': <Logger plugin.createNewTask.createTask (INFO)>,
+ 'rootPath': '/home/admin/DirStructure_root/prod/projects',
+ 'script_key': 'osayi0frbwuqiSizj#tiatdyz',
+ 'script_name': 'readAccess',
+ 'server': 'https://sagar.shotgrid.autodesk.com',
+ 'sg': <shotgun_api3.shotgun.Shotgun object at 0x7f957102b160>,
+ 'taskDict': {'content': 'Animation',
+              'entity': {'id': 1373, 'name': '0010', 'type': 'Shot'},
+              'entity.Shot.code': '0010',
+              'entity.Shot.sg_sequence.Sequence.episode': {'id': 38,
+                                                           'name': 'ep01',
+                                                           'type': 'Episode'},
+              'id': 6257,
+              'project.Project.code': 'TEP',
+              'step': {'id': 106, 'name': 'Animation', 'type': 'Step'},
+              'task_assignees': [],
+              'type': 'Task'},
+ 'taskFields': ['content',
+                'sg_status',
+                'step',
+                'task_assignees',
+                'entity',
+                'project.Project.code',
+                'entity.Shot.sg_sequence.Sequence.episode',
+                'entity.Shot.code'],
+ 'task_id': 6257,
+ 'templatePath': '/home/admin/pipeline/Templates'}
+2023-05-10 17:15:40,752 - plugin.createNewTask.createTask - INFO - Task folder created at: 
+ /home/admin/DirStructure_root/prod/projects/TEP/work/sequences/ep01/0010/Layout/Layout
+2023-05-10 17:16:02,372 - plugin.createNewTask.createTask - INFO - check val is false
+2023-05-10 17:16:24,834 - plugin.createNewTask.createTask - INFO - Task folder created at: 
+ /home/admin/DirStructure_root/prod/projects/TEP/work/sequences/ep01/0010/Animation/characterAnim
+2023-05-10 17:16:56,999 - plugin.createNewTask.createTask - INFO - check val is false
+2023-05-10 17:18:18,912 - plugin.createNewTask.createTask - INFO - Task folder created at: 
+ /home/admin/DirStructure_root/prod/projects/TEP/work/sequences/ep01/0010/Animation/characterAnim

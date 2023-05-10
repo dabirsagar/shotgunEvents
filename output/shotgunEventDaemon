@@ -1,0 +1,110 @@
+2023-05-10 12:43:37,631 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 12:43:37,632 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 12:43:53,169 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 12:44:07,032 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-10 14:15:26,330 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 14:15:26,331 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 14:15:28,280 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 14:15:30,244 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewShot.py
+2023-05-10 14:24:24,328 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-10 15:10:51,231 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 15:10:51,231 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 15:10:53,200 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 15:10:55,155 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:11:29,275 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:11:41,823 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:12:31,628 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-10 15:12:33,818 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 15:12:33,819 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 15:12:35,746 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 15:12:37,674 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:14:26,085 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:15:05,372 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 15:16:26,897 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:17:17,071 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:19:42,363 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:20:16,227 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:20:23,493 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:21:02,338 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-10 15:21:05,211 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 15:21:05,211 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 15:21:07,146 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 15:21:09,074 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:22:33,978 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:22:43,882 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-10 15:22:46,317 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 15:22:46,318 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 15:22:48,239 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 15:22:50,191 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:23:23,481 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-10 15:31:26,484 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 15:31:26,485 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 15:31:28,468 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 15:31:30,428 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 15:32:32,519 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-10 16:11:37,139 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 16:11:37,140 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 16:11:38,235 - engine - CRITICAL - Error running register callback function from plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py.
+
+Traceback (most recent call last):
+  File "/home/admin/pipeline/shotgunEvents/src/shotgunEventDaemon.py", line 849, in load
+    regFunc(Registrar(self))
+  File "/home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py", line 34, in registerCallbacks
+    if not is_valid(sg, reg.logger):
+  File "/home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py", line 61, in is_valid
+    sg.find_one("Project", [])
+  File "/usr/local/lib/python3.6/site-packages/shotgun_api3/shotgun.py", line 882, in find_one
+    additional_filter_presets=additional_filter_presets)
+  File "/usr/local/lib/python3.6/site-packages/shotgun_api3/shotgun.py", line 1025, in find
+    records = self._call_rpc("read", params).get("entities", [])
+  File "/usr/local/lib/python3.6/site-packages/shotgun_api3/shotgun.py", line 3368, in _call_rpc
+    req_headers,
+  File "/usr/local/lib/python3.6/site-packages/shotgun_api3/shotgun.py", line 3522, in _make_call
+    return self._http_request(verb, path, body, req_headers)
+  File "/usr/local/lib/python3.6/site-packages/shotgun_api3/shotgun.py", line 3576, in _http_request
+    resp, content = conn.request(url, method=verb, body=body, headers=headers)
+  File "/usr/local/lib/python3.6/site-packages/shotgun_api3/lib/httplib2/python3/__init__.py", line 1709, in request
+    conn, authority, uri, request_uri, method, body, headers, redirections, cachekey,
+  File "/usr/local/lib/python3.6/site-packages/shotgun_api3/lib/httplib2/python3/__init__.py", line 1424, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/usr/local/lib/python3.6/site-packages/shotgun_api3/lib/httplib2/python3/__init__.py", line 1376, in _conn_request
+    response = conn.getresponse()
+  File "/usr/lib64/python3.6/http/client.py", line 1346, in getresponse
+    response.begin()
+  File "/usr/lib64/python3.6/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib64/python3.6/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib64/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib64/python3.6/ssl.py", line 971, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib64/python3.6/ssl.py", line 833, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib64/python3.6/ssl.py", line 590, in read
+    v = self._sslobj.read(len, buffer)
+KeyboardInterrupt
+
+2023-05-10 16:11:40,534 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-10 16:56:16,676 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 16:56:16,676 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 16:56:18,613 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 16:56:20,571 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 16:56:33,691 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-10 16:56:58,136 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 16:56:58,137 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 16:57:00,058 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 16:57:01,989 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 16:59:32,122 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-10 17:01:03,518 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 17:01:03,519 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 17:01:05,473 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 17:01:07,396 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 17:03:31,331 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 17:04:47,033 - engine - WARNING - Keyboard interrupt. Cleaning up...
+2023-05-10 17:15:15,692 - engine - INFO - Using SG Python API version 3.3.5
+2023-05-10 17:15:15,693 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/assign_to_project.py
+2023-05-10 17:15:17,633 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewProjectStructure.py
+2023-05-10 17:15:19,554 - engine - INFO - Loading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 17:15:26,795 - engine - INFO - Reloading plugin at /home/admin/pipeline/shotgunEvents/src/plugins/createNewTask.py
+2023-05-10 17:24:58,156 - engine - WARNING - Keyboard interrupt. Cleaning up...

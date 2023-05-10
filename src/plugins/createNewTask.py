@@ -45,8 +45,8 @@ def registerCallbacks(reg):
     reg.registerCallback(
         script_name,
         script_key,
-        createProject,
-        {"Shotgun_Project_Change": "sg_pipeline_ready"},
+        createTask,
+        {"Shotgun_Task_Change": "sg_pipeline_ready"},
         None,
     )
     reg.logger.debug("Registered callback.")
@@ -71,7 +71,7 @@ def is_valid(sg, logger):
     return True
 
 
-def createProject(sg, logger, event, args):
+def createTask(sg, logger, event, args):
     """
     Assigns a HumanUser to a Project if that HumanUser is assigned to a Task
     which belongs to a Project s/he isn't already assigned to.
@@ -80,6 +80,11 @@ def createProject(sg, logger, event, args):
     :param logger: Logger instance.
     :param event: A Shotgun EventLogEntry entity dictionary.
     :param args: Any additional misc arguments passed through this plugin.
+
+    {'type': 'Task', 'id': 6225, 'content': 'FX', 
+    'step': {'id': 6, 'name': 'FX', 'type': 'Step'}, 'task_assignees': [], 
+    'entity': {'id': 1339, 'name': '0010', 'type': 'Shot'}, 'project': {'id': 288, 'name': 'DummyTV', 'type': 'Project'}}
+
     """
     server = 'https://sagar.shotgrid.autodesk.com'
     script_name = 'readAccess'
@@ -94,30 +99,29 @@ def createProject(sg, logger, event, args):
     # Bail if we don't have the info we need.
     # if not event_project or not checkVal:
     #     return
-    project_id = event.get("meta", {}).get('entity_id')
-    projDict = sg.find("Project", [['id','is', project_id]], ['code', 'sg_status', 'name'])[0]
-
-    if projDict['code'] == None:
-        logger.info("Project code is not set. Skipping folder creation for  \n {0}".format(projDict['name']))
-        return
+    task_id = event.get("meta", {}).get('entity_id')
+    taskFields = ['content', 'sg_status', 'step', 
+                  'task_assignees', 'entity', 'project.Project.code',
+                  'entity.Shot.sg_sequence.Sequence.episode', 'entity.Shot.code']
+    taskDict = sg.find("Task", [['id','is', task_id]], taskFields)[0]
+    print(taskDict)
 
     if checkVal is True:
         sg = shotgun_api3.Shotgun(server, script_name=script_name, api_key=script_key)
         rootPath = '/home/admin/DirStructure_root/prod/projects'
-        
         templatePath = '/home/admin/pipeline/Templates'
-        
-        code = projDict['code']
-        if str(projDict['sg_status']) == 'Active':
-            projPath = os.path.join(rootPath, code)
-            if not os.path.exists(projPath):
-                shutil.copytree((os.path.join(templatePath, 'projectTemplates', 'template01')), os.path.join(rootPath,code))
-                logger.info("Project folder created at: \n {0}".format(projPath))
+
+        if taskDict['entity']['type'] == 'Shot':
+
+            taskPath = os.path.join(rootPath,taskDict['project.Project.code'], 'work', 
+                                    'sequences',taskDict['entity.Shot.sg_sequence.Sequence.episode']['name'],
+                                    taskDict['entity.Shot.code'], taskDict['step']['name'], taskDict['content'])
+
+            if not os.path.exists(taskPath):
+                shutil.copytree((os.path.join(templatePath, 'taskTemplates', taskDict['step']['name'])), taskPath)
+                logger.info("Task folder created at: \n {0}".format(taskPath))
             else:
-                logger.error('{0} path already exists. Skipping folder creation.'.format(projPath))
-        else:
-            logger.warning('project {0} not active...Skipping folder creation.'.format(code))
-            return
+                logger.error('{0} path already exists. Skipping folder creation.'.format(taskPath))
 
     else:
         logger.info("check val is false")
