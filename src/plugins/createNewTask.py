@@ -96,13 +96,11 @@ def createTask(sg, logger, event, args):
 
     #logger.info("Completed batch update at {0}".format(event))
 
-    # Bail if we don't have the info we need.
-    # if not event_project or not checkVal:
-    #     return
     task_id = event.get("meta", {}).get('entity_id')
     taskFields = ['content', 'sg_status', 'step', 
-                  'task_assignees', 'entity', 'project.Project.code',
-                  'entity.Shot.sg_sequence.Sequence.episode', 'entity.Shot.code']
+                  'task_assignees', 'entity', 'project.Project.code', 'entity.Shot.sg_sequence',
+                  'entity.Shot.sg_sequence.Sequence.episode', 'entity.Shot.code', 'entity.Asset.sg_asset_type']
+    
     taskDict = sg.find("Task", [['id','is', task_id]], taskFields)[0]
     print(taskDict)
 
@@ -112,16 +110,34 @@ def createTask(sg, logger, event, args):
         templatePath = '/home/admin/pipeline/Templates'
 
         if taskDict['entity']['type'] == 'Shot':
-
-            taskPath = os.path.join(rootPath,taskDict['project.Project.code'], 'work', 
-                                    'sequences',taskDict['entity.Shot.sg_sequence.Sequence.episode']['name'],
-                                    taskDict['entity.Shot.code'], taskDict['step']['name'], taskDict['content'])
-
-            if not os.path.exists(taskPath):
-                shutil.copytree((os.path.join(templatePath, 'taskTemplates', taskDict['step']['name'])), taskPath)
-                logger.info("Task folder created at: \n {0}".format(taskPath))
+            # check if a project is episodic
+            if taskDict['entity.Shot.sg_sequence.Sequence.episode'] is not None:
+                taskPath = os.path.join(rootPath,taskDict['project.Project.code'], 'work', 
+                                        'sequences',taskDict['entity.Shot.sg_sequence.Sequence.episode']['name'],
+                                        taskDict['entity.Shot.sg_sequence']['name'], taskDict['entity.Shot.code'], 
+                                        taskDict['step']['name'], taskDict['content']
+                                        )
             else:
-                logger.error('{0} path already exists. Skipping folder creation.'.format(taskPath))
+                taskPath = os.path.join(rootPath,taskDict['project.Project.code'], 'work', taskDict['entity.Shot.sg_sequence']['name'],
+                                        'sequences', taskDict['entity.Shot.code'], taskDict['step']['name'], 
+                                        taskDict['content']
+                                        )
+                
+        elif taskDict['entity']['type'] == 'Asset':
+
+                taskPath = os.path.join(rootPath,taskDict['project.Project.code'], 'work', 
+                                        'assets', taskDict['entity.Asset.sg_asset_type'],
+                                        taskDict['entity']['name'], taskDict['step']['name'],
+                                        taskDict['content']
+                                        )
+        else:
+            print('no entity found')
+        print(taskPath)
+        if not os.path.exists(taskPath):
+            shutil.copytree((os.path.join(templatePath, 'taskTemplates', taskDict['step']['name'])), taskPath)
+            logger.info("Task folder created at: \n {0}".format(taskPath))
+        else:
+            logger.error('{0} path already exists. Skipping folder creation.'.format(taskPath))
 
     else:
         logger.info("check val is false")
